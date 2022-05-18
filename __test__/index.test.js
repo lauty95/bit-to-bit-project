@@ -1,4 +1,5 @@
 const {
+    funcionPrueba,
     devolverString,
     tienenMismaLongitud,
     sonIguales,
@@ -26,6 +27,12 @@ const {
     deCelsiusAFahrenheit,
 } = require('../homework')
 
+describe('función de prueba', () => {
+    test('Deberia devolver el string "Alexis es un salame"', () => {
+        expect(funcionPrueba()).toBe('Alexis es un salame')
+    })
+})
+
 describe('Devolver String', () => {
     test('Deberia devolver el string provisto por parámetro', () => {
         let param = 'Soy un parámetro'
@@ -43,7 +50,7 @@ describe('Devolver Suma', () => {
 
 describe('Devolver Resta', () => {
     test('Deberia devolver la resta de los 2 números', () => {
-        expect(resta(2, 3)).toBe(1)
+        expect(resta(2, 3)).toBe(-1)
         expect(resta(-2, 0)).toBe(-2)
         expect(resta(0, 0)).toBe(0)
     })
@@ -68,14 +75,14 @@ describe('Devolver Igualdad', () => {
     test('Deberia devolver true si son iguales o false si no lo son', () => {
         expect(sonIguales(2, 3)).toBe(false)
         expect(sonIguales(3, 3)).toBe(true)
-        expect(sonIguales('2', '3')).toBe(true)
+        expect(sonIguales('2', '3')).toBe(false)
     })
 })
 
 describe('Devolver Menos que 10', () => {
     test('Deberia devolver true si es menor a 10 o false si no lo es', () => {
-        expect(menosQueDiez(2)).toBe(false)
-        expect(menosQueDiez(20)).toBe(true)
+        expect(menosQueDiez(2)).toBe(true)
+        expect(menosQueDiez(20)).toBe(false)
         expect(menosQueDiez(10)).toBe(false)
     })
 })
@@ -92,7 +99,7 @@ describe('Devolver Resto', () => {
     test('Deberia devolver el resto de los 2 números', () => {
         expect(obtenerResto(2, 3)).toBe(2)
         expect(obtenerResto(5, 5)).toBe(0)
-        expect(obtenerResto(13, 3)).toBe(3)
+        expect(obtenerResto(13, 3)).toBe(1)
     })
 })
 
@@ -109,7 +116,7 @@ describe('Es Impar', () => {
     test('Deberia devolver true si impar o false si no lo es', () => {
         expect(esImpar(5)).toBe(true)
         expect(esImpar(6)).toBe(false)
-        expect(esImpar(-5)).toBe(true)
+        expect(esImpar(17)).toBe(true)
         expect(esImpar(0)).toBe(false)
     })
 })
@@ -141,7 +148,7 @@ describe('Devolver la potencia', () => {
     test('Deberia devolver la potencia de los números', () => {
         expect(elevar(5, 3)).toBe(125)
         expect(elevar(6, 0)).toBe(1)
-        expect(elevar(-5, 1)).toBe(-1)
+        expect(elevar(-5, 1)).toBe(-5)
     })
 })
 
@@ -207,7 +214,7 @@ describe('Devolver el Perímetro', () => {
 describe('Devolver el área del triángulo', () => {
     test('Deberia devolver el área de un triángulo', () => {
         expect(areaDelTriangulo(10, 5)).toBe(25)
-        expect(areaDelTriangulo(20, 10)).toBe(10)
+        expect(areaDelTriangulo(20, 10)).toBe(100)
         expect(areaDelTriangulo(0, 15)).toBe(0)
     })
 })
