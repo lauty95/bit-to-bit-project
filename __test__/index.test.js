@@ -205,8 +205,8 @@ describe('Devolver el área del rectángulo', () => {
 
 describe('Devolver el Perímetro', () => {
     test('Deberia devolver el perímetro de un cuadrado', () => {
-        expect(perimetro(5)).toBe(10)
-        expect(perimetro(6)).toBe(12)
+        expect(perimetro(5)).toBe(20)
+        expect(perimetro(6)).toBe(24)
         expect(perimetro(0)).toBe(0)
     })
 })
