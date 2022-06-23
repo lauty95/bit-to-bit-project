@@ -140,7 +140,7 @@ describe('devolverUltimoElemento(arr)', function () {
     it('debería devolver el último ítem del array', function () {
         expect(devolverUltimoElemento([10, 10, 16, 12])).toBe(12);
         expect(devolverUltimoElemento([97, 100, 80, 55, 72, 94])).toBe(94);
-        expect(devolverUltimoElemento(['hi', 'there', 'how', 'are', 'you', 'doing?'])).toBe('doing?');
+        expect(devolverUltimoElemento(['Dario', 'Josefina', 'Diego', 'Alexis', 'Leo', 'Lauty'])).toBe('Alexis');
     });
 });
 
@@ -156,7 +156,7 @@ describe('breakStatement(numero)', function () {
     it('debería devolver un array con los valores resultantes de sumar 2 en cada iteración', function () {
         expect(breakStatement(50)).toEqual([52, 54, 56, 58, 60, 62, 64, 66, 68, 70]);
     });
-    it('should stop the execution si the sum value y the iteration number match', function () {
+    it('debería detener la ejecución si el valor de la suma y la iteración coinciden', function () {
         expect(breakStatement(-4)).toEqual('Se interrumpió la ejecución');
     });
 });
