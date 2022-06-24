@@ -29,7 +29,7 @@ const {
     perimetro,
     areaDelTriangulo,
     deCelsiusAFahrenheit,
-} = require('../homework')
+} = require('../activities')
 
 describe('nuevaString', function () {
     it('Deberia ser un string', function () {

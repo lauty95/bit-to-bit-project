@@ -14,7 +14,7 @@ const {
     tablaDelSees,
     tieneTresDigitos,
     doWhile
-} = require('../homework');
+} = require('../activities');
 
 describe('obtenerMayor(x, y)', function () {
     it('debería devolver x si es mas grye que y', function () {

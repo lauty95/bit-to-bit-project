@@ -3,15 +3,15 @@
     "version": "1.0.0",
     "description": "",
     "scripts": {
-      "test": "jest"
+        "test": "jest"
     },
     "keywords": [
-      "jest",
-      "testing"
+        "jest",
+        "testing"
     ],
     "author": "Lautaro",
     "license": "MIT",
     "dependencies": {
-      "jest": "^28.1.0"
+        "jest": "^28.1.1"
     }
-  }
+}
