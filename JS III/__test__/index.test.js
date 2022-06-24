@@ -229,7 +229,7 @@ describe('agregarMetodoCalculoDescuento(storeItem)', function () {
         expect(agregarMetodoCalculoDescuento(storeItem).calcularPrecioDescuento).toBeDefined();
         expect(agregarMetodoCalculoDescuento(storeItem2).calcularPrecioDescuento).toBeDefined();
     });
-    it('debería returnar el descuento de precio del nuevo metodo \'precioConDescuento\'', function () {
+    it('debería retornar el descuento de precio del nuevo metodo \'precioConDescuento\'', function () {
         expect(agregarMetodoCalculoDescuento(storeItem).calcularPrecioDescuento()).toBe(72);
         expect(agregarMetodoCalculoDescuento(storeItem2).calcularPrecioDescuento()).toBe(2.5);
     });
@@ -278,7 +278,7 @@ describe('forEach(arr, cb)', function () {
 });
 
 describe('map(arr, cb)', function () {
-    it('debería returnar un array con todos los elementos procesados', function () {
+    it('debería retornar un array con todos los elementos procesados', function () {
         const squares = map([1, 2, 3, 4, 5], function (num) {
             return num * num;
         });
