@@ -188,8 +188,8 @@ Ahora que tenemos un conjunto de variables, necesitamos funciones para calcularl
 
 ```javascript
     function miFuncion() {}
-    var otraFuncion = function () {};
-    var yOtra = () => {};
+    const otraFuncion = function () {};
+    const yOtra = () => {};
 ```
 
 ### Anatomía de una Función
