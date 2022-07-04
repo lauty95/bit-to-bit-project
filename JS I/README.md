@@ -176,8 +176,8 @@ console.log(nombreGato.lastIndexOf('yo')); // 8
 
 ```javascript
 var nombreGato = 'yo hago yoga hoy';
-console.log(nombreGato.replace('yo', 'no')); // 0 (es la primer posición)
-console.log(nombreGato.lastIndexOf('yo')); // 8
+console.log(nombreGato.replace('yo', 'no')); // 'no hago yoga hoy'
+console.log(nombreGato.replaceAll('yo', 'no')); // 'no hago noga hoy'
 ```
 
 ## Introducción a las Funciones
