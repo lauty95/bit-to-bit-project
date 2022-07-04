@@ -37,7 +37,13 @@ Este método muy simple nos permitirá imprimir en la consola todo lo que pongam
 
 ## Tipos de Datos
 
-Estos son los tipos de datos más básicos en Javascript.
+Un tipo de datos Primitivo, son tipos de datos básicos que vienen previamente definidos con el lenguaje. Usando estos tipos de datos primitivos vamos a poder crear tipos de datos más complejos. 
+
+* __undefined__: Este representa que algo no está definido, como por ejemplo cuando declaramos una variable y no le asignamos nada, toma el valor `undefined` por defecto.
+* __null__: Este tambien representa que algo no existe. Lo vamos a usar para decir que una variable está vacía o no tiene nada adentro. (No es lo mismo decir que una variable no está definida, a que NO tiene nada adentro. En el segundo caso _sabemos_ que no tiene nada.)
+* __Boolean__: true o false.
+* __Number__: Este tipo de datos representa un número real. En JavaScript todos los números son representados como tipo flotantes.
+* __String__ : Una secuencia de caractéres.
 
 ### Strings
 
@@ -143,7 +149,7 @@ Recordemos que el primer valor es el 0.
 ```javascript
 var nombreGato = 'felix';
 console.log(nombreGato.charAt(2)); // l
-console.log(nombreGato.[2]); // l
+console.log(nombreGato[2]); // l
 ```
 
 `includes` Esto devolverá un booleano si encuentra lo que buscas por parámetro.
@@ -155,7 +161,7 @@ console.log(nombreGato.includes("ix")); // true
 `substring` extrae caracteres desde indiceA hasta indiceB sin incluirlo.
 ```javascript
 var nombreGato = 'Felix';
-console.log(nombreGato.substring("2,4")); // "li"
+console.log(nombreGato.substring(2,4)); // "li"
 ```
 
 `indexOf` y `lastIndexOf` busca el primer y el último índice respectivamente de lo que se busque por parámetro.
